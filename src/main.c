@@ -84,7 +84,7 @@ static void can_init(void)
 
 static void can_send(uint32_t id, uint8_t *data, uint8_t len)
 {
-    while (!(CAN1_TSR & (1U << 26))
+    while (!(CAN1_TSR & (1U << 26)))
     {
     }
 
